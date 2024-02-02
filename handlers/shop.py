@@ -30,3 +30,5 @@ async def manga(message: types.Message):
 @shop_router.message(F.text == 'Comics')
 async def comics(message: types.Message):
     await message.answer(f"Комиксы это книги с картинками")
+
+

@@ -1,7 +1,7 @@
 import asyncio
 import logging
 from bot import bot, dp
-from handlers import start_router, pic_router, shop_router
+from handlers import start_router, pic_router, shop_router, opros_router
 
 
 
@@ -11,6 +11,7 @@ async def main():
     dp.include_router(pic_router)
     dp.include_router(shop_router)
     dp.include_router(start_router)
+    dp.include_router(opros_router)
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
